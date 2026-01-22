@@ -47,6 +47,8 @@ Response
   "response": "string"
 }
 
+---
+
 
 2. Upload File Endpoint
 POST /upload
@@ -76,9 +78,9 @@ Docker
 
 Docker Compose
 
-Steps
+###Steps
 
-git clone <your-github-repo-url>
+git clone https://github.com/koushik-bit/ai-chatbot-rag.git
 cd ai-chatbot-rag
 cp .env.example .env
 docker-compose up --build
