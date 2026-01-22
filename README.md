@@ -86,16 +86,24 @@ Docker Compose
 ###Steps
 
 git clone https://github.com/koushik-bit/ai-chatbot-rag.git
+
 cd ai-chatbot-rag
+
 cp .env.example .env
+
 docker-compose up --build
+
 The backend will be available at:
 http://localhost:8000
+
 Swagger API Docs:
 http://localhost:8000/docs
-Notes
+
+---
+###Notes
 All chats and uploaded documents are scoped by session_id
 
 Conversation history is retrieved from the database and reused for response generation
 
 No frontend UI is included
+---
