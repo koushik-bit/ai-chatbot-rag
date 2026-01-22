@@ -41,16 +41,18 @@ Send a message to the chatbot.
   "session_id": "string",
   "message": "string"
 }
-
-Response
+```
+**Response**
+```json
 {
   "response": "string"
 }
+```
 
 ---
 
 
-2. Upload File Endpoint
+###2. Upload File Endpoint
 POST /upload
 
 Upload a document to be used as contextual knowledge for the chatbot.
@@ -60,10 +62,12 @@ Form Data
 session_id (string)
 
 file (PDF or text file)
+---
 
-Environment Variables
+
+###Environment Variables
 Create a .env file using the example below.
-
+```env
 LLM_PROVIDER=openai
 
 OPENAI_API_KEY=your_openai_api_key
@@ -72,6 +76,7 @@ OPENAI_MODEL=gpt-4o-mini
 DATABASE_URL=postgresql+psycopg2://postgres:postgres@db:5432/postgres
 
 APP_DEBUG=true
+```
 Local Setup (Docker)
 Prerequisites
 Docker
